@@ -1,7 +1,6 @@
 package tests;
 
 import org.junit.Test;
-import org.openqa.selenium.By;
 
 import pages.HomePage;
 import pages.LoginPage;
@@ -11,9 +10,7 @@ public class HomePageTests extends BaseTests{
     String validEmail = "aleksaceran123@gmail.com";
     String validPassword = "Comtradeispit1";
 
-        By signOutButton  = By.xpath("//li[@data-label='or']");
-        By welcomeMessageDropdownMenu = By.xpath("(//button[@class='action switch'])[1]");
-
+        
 
     @Test
     public void navToWhatsNewPage(){
@@ -31,7 +28,7 @@ public class HomePageTests extends BaseTests{
         homepage.goToHomePage();
         homepage.navToSignIn();
         loginPage.login(validEmail,validPassword);
-        homepage.waitElementToBeVisible(welcomeMessageDropdownMenu);
+        homepage.waitElementToBeVisible(homepage.getWelcomeMessageDropdownMenu());
 
         homepage.logout();
 

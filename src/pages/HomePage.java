@@ -22,6 +22,20 @@ public class HomePage extends BasePage{
     By welcomeMessageDropdownMenu = By.xpath("(//button[@class='action switch'])[1]");
     By signOutButton  = By.xpath("(//li[@data-label='or'])[1]");
 
+    public By getWelcomeMessageDropdownMenu() {
+        return welcomeMessageDropdownMenu;
+    }
+    public void setWelcomeMessageDropdownMenu(By welcomeMessageDropdownMenu) {
+        this.welcomeMessageDropdownMenu = welcomeMessageDropdownMenu;
+    }
+    public By getSignOutButton() {
+        return signOutButton;
+    }
+    public void setSignOutButton(By signOutButton) {
+        this.signOutButton = signOutButton;
+    }
+
+
     String expectedPageTitle = "Welcome, Aleksa Ceran!";
     String baseUrl = "https://magento.softwaretestingboard.com";                        //  STAVKA 1 PT. 2
 
