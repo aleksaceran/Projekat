@@ -27,7 +27,7 @@ public class ProductDetailsTest extends BaseTests{
         homepage.navToWhatsNewPage();
         homepage.waitElementToBeVisible(cartPage.getWhatsNewElements());
         whatsNewPage.countNumberOfElements(cartPage.getWhatsNewElements());
-        whatsNewPage.clickOnRandomElementFromList(cartPage.getWhatsNewElements());                                         // NEKAD RADI NEKAD NE RADI   
+        whatsNewPage.clickOnRandomElementFromList(cartPage.getWhatsNewElements());                                         
         productDetailsPage.addToCartFromDetailPageFunction();
         productDetailsPage.clickOnRandomSizeOnProductDetailsPage(cartPage.getRandomSizeOfItem());
         productDetailsPage.clickOnRandomColorOnProductDetailsPage(cartPage.getRandomSizeOfItem());

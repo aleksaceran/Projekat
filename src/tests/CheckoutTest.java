@@ -60,7 +60,9 @@ public class CheckoutTest extends BaseTests{
             checkoutPage.informationInput("Comtrade","Palisadska 1","Beograd", "11000", "0694440604");
             checkoutPage.popUpCountrySortValueDropdown("Serbia");
 
-            //  SREDITI country add
+            //  ovaj kod ce u ovom momentu puci, iz razloga sto navodno ne vidi Srbiju kao vrednost na padajucoj listi
+            //  u prvom testu ove klase u kom se takodje unosi Srbija kao vrednost prilikom prvog unosa informacija za Shipping
+            //  kod u potpunosti radi, stoga ne znam da li su login podaci vezani za lokalnu masinu ili moze da se loguje svaki racunar sa kreiranim kredencijalima
             
             checkoutPage.dontSaveAddress();
             checkoutPage.navToReviewAndPayments();

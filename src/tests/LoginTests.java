@@ -30,8 +30,9 @@ public class LoginTests extends BaseTests{
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-        homepage.verifySuccessfulLogin();                                                   // KAKO JE JEBENI ACTUAL [] ODNOSNO PRAZAN 
-    }
+        homepage.verifySuccessfulLogin();  
+    }          
+
     @Test
     public void loginWithInvalidPassword(){
         HomePage homepage = new HomePage(driver);               
@@ -66,12 +67,11 @@ public void loginWithNoCredentials(){
     loginPage.login("","");
     loginPage.verifyEmptyRequiredEmailField(errorRequiredFieldMessage);
     loginPage.verifyEmptyRequiredPasswordField(errorRequiredFieldMessage);
-    // VERIFY ??
+    
 }
 
 
 
-//Please enter a valid email address (Ex: johndoe@domain.com).
 
 
     @Test                                               //  RADI!
